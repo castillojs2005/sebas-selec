@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Editor de catálogo — SEBAS SELEC</title>
+<title>Editor de catálogo — SEBAS SELEC</title><meta name="robots" content="noindex,nofollow">
 <style>
 :root{--dark:#191c17;--lime:#d6ff75;--bg:#f6f5f0;--line:#e1e3d9}
 *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--dark)}
@@ -15,10 +15,42 @@ button,.btn{border:0;background:var(--dark);color:#fff;padding:12px 18px;border-
 .products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin-top:19px}.product{border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;align-items:center;gap:11px;background:#fff;cursor:pointer;text-align:left;color:inherit;min-width:0}.product.active{outline:2px solid #a8c875;background:#f4f9ea}.product img{width:58px;height:63px;object-fit:contain;background:#e9e7e0;border-radius:8px}.product span{min-width:0}.product b{font-size:12px;display:block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.product small{color:#74786e;font-size:10px}.check{display:flex;align-items:center;gap:9px}.check input{width:20px;height:20px}.panel{display:grid;grid-template-columns:190px 1fr;gap:22px;margin-top:22px}.preview{border-radius:12px;background:#e9e7df;min-height:220px;display:flex;justify-content:center;align-items:center;overflow:hidden}.preview img{width:98%;max-height:260px;object-fit:contain}
 .actions{display:flex;justify-content:space-between;gap:10px;margin-top:21px;flex-wrap:wrap}.note{background:#eff4e3;padding:15px 17px;font-size:12px;border-radius:11px;line-height:1.75;color:#3a4b2d}.sticky{position:sticky;bottom:12px;display:flex;justify-content:space-between;align-items:center;gap:15px;background:#181b16;border-radius:16px;color:white;padding:14px 19px;box-shadow:0 12px 40px #0003;z-index:2;flex-wrap:wrap}.sticky p{font-size:12px;color:#d5d9ca;margin:0}.sticky b{color:var(--lime)}
 @media(max-width:720px){.grid{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,minmax(0,1fr))}.panel{grid-template-columns:1fr}.preview{min-height:180px}.preview img{max-height:170px}.card{padding:18px}.heading h1{font-size:29px}}
+
+/* SEBAS SELEC · Panel black & gold */
+:root{--dark:#100f10;--lime:#d7b473;--bg:#111012;--line:#4c3c29;color-scheme:dark}
+body{background:radial-gradient(ellipse at 30% 0%,#291e15,#111012 48%);color:#f6eee3}
+.heading h1{color:#f5e7ce;font-family:Georgia,"Times New Roman",serif;font-weight:400}
+.heading h1 span{color:#dbb979!important}
+.muted{color:#b8a995}
+.chip{border-color:#907248;color:#e9c68d}
+button,.btn{background:#392c1d;border:1px solid #957343;color:#f2d9a8}
+button.secondary,.btn.secondary{background:#30271f;color:#f3dcaf;border:1px solid #725837}
+button.danger{background:#4d2825;color:#ffd5ce;border:1px solid #88534d}
+button.lime{background:linear-gradient(120deg,#f0d8a8,#c89b53);color:#24180b;border:1px solid #f1d8aa}
+.card{background:#1c1919;border:1px solid #594329;box-shadow:0 9px 32px #0007}
+h2,h3,label{color:#f5e8d4}
+input,textarea,select{background:#282421;border:1px solid #665238;color:#fff0db}
+input::placeholder,textarea::placeholder{color:#b5a795}
+input:focus,textarea:focus,select:focus{border-color:#e4be7c;box-shadow:0 0 0 2px #d6a95d33}
+.help{color:#b8a995}
+.product{background:#282320;border-color:#5f4c33;color:#f8ebd6}
+.product.active{background:#403120;outline:2px solid #d7ad6b}
+.product img,.preview{background:#f1eadc}
+.product small{color:#c0ac94}
+.note{background:#33291e;color:#f0d7aa;border:1px solid #795e3e}
+.sticky{background:#1b1612;border:1px solid #84663f}
+.sticky p{color:#dfc7a3}.sticky b{color:#edc984}
+:focus-visible{outline:2px solid #e9c481;outline-offset:3px}
+
+
+.split-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:32px;margin-bottom:16px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:22px}.split-heading h3{margin:0}.split-heading .help{max-width:600px;margin:7px 0 0}
+.kit-editor-list{display:grid;gap:15px}.kit-edit-item{background:#29221b;border:1px solid #75582e;border-radius:12px;padding:18px}.kit-edit-head{display:flex;justify-content:space-between;align-items:center;gap:9px;margin-bottom:14px}.kit-edit-head strong{font-size:15px;color:#efcf96}.kit-edit-head button{padding:9px 12px}.kit-edit-fields{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.kit-edit-item textarea{min-height:72px}.tier-edit-row{display:grid;grid-template-columns:1fr 1fr 1fr 84px;gap:10px;align-items:center;margin:8px 0}.tier-editor-labels{display:grid;grid-template-columns:1fr 1fr 1fr 84px;gap:10px;color:#cdb68d;font-size:11px;font-weight:800}.tier-edit-row .danger{height:45px;padding:9px}.special-help{color:#e4c78d;font-size:12px}
+@media(max-width:850px){.kit-edit-fields{grid-template-columns:1fr 1fr}}
+@media(max-width:550px){.kit-edit-fields{grid-template-columns:1fr}.tier-edit-row{grid-template-columns:1fr 1fr;gap:6px}.tier-editor-labels{display:none}.tier-edit-row>*:nth-child(3){grid-column:1/2}.tier-edit-row>*:nth-child(4){grid-column:2/3}.kit-edit-item{padding:12px}}
 </style>
 </head>
 <body><main>
-<div class="heading"><div><span class="chip">GESTIÓN DE TIENDA</span><h1>Editor de catálogo<span style="color:#83a64b">.</span></h1><div class="muted">Cambia tu marca, WhatsApp, fotografías y productos, sin programar.</div></div><a href="index.html" class="btn" target="_blank" rel="noopener">Ver catálogo ↗</a></div>
+<div class="heading"><div><span class="chip">GESTIÓN DE TIENDA</span><h1>Editor de catálogo<span style="color:#83a64b">.</span></h1><div class="muted">Cambia textos comerciales, paquetes mayoristas, precios, fotografías y productos sin programar.</div></div><a href="index.html" class="btn" target="_blank" rel="noopener">Ver catálogo ↗</a></div>
 <div class="card"><h2>1. Datos de tu negocio</h2><p class="muted">Solo tienes que rellenar estos datos una vez.</p><div class="grid">
 <div class="field"><label for="cName">Nombre de la tienda</label><input id="cName" /></div>
 <div class="field"><label for="cSub">Texto pequeño debajo del logo</label><input id="cSub" /></div>
@@ -28,37 +60,91 @@ button,.btn{border:0;background:var(--dark);color:#fff;padding:12px 18px;border-
 <div class="field"><label for="cSymbol">Símbolo del precio</label><input id="cSymbol" placeholder="$" /></div>
 </div><div class="field" style="margin-top:13px"><label for="cDescription">Descripción de la portada</label><textarea id="cDescription" rows="2" style="min-height:65px"></textarea></div>
 <div class="check" style="margin-top:13px"><input type="checkbox" id="cDemo"/><label for="cDemo">Mostrar aviso de catálogo de demostración (desmárcalo SOLO cuando todos los productos y precios sean reales)</label></div></div>
-<div class="card"><div class="row" style="justify-content:space-between"><div><h2>2. Tus productos</h2><p class="muted" style="margin:0">Selecciona un producto para editar o agrega uno nuevo.</p></div><button id="addProduct" class="lime">＋ Nuevo producto</button></div>
+
+<div class="card" id="editMayoreo"><div class="row" style="justify-content:space-between"><div><span class="chip">MAYOREO</span><h2 style="margin-top:12px">2. Tu sección para emprendedores</h2><p class="muted">Aquí puedes modificar todos los textos, paquetes y precios al por mayor. Sin código.</p></div><a href="index.html#mayoreo" class="btn secondary" target="_blank">Ver sección ↗</a></div>
+<div class="grid" style="margin-top:18px"><div class="field"><label for="wEyebrowEdit">Texto pequeño de presentación</label><input id="wEyebrowEdit"></div><div class="field"><label for="wSloganEdit">Frase final</label><input id="wSloganEdit"></div></div>
+<div class="field" style="margin-top:14px"><label for="wTitleEdit">Título principal de mayoreo</label><input id="wTitleEdit"></div>
+<div class="field" style="margin-top:14px"><label for="wDescriptionEdit">Descripción de tu negocio</label><textarea id="wDescriptionEdit"></textarea></div>
+<div class="grid" style="margin-top:14px"><div class="field"><label for="wPackKickEdit">Texto superior de los paquetes</label><input id="wPackKickEdit"></div><div class="field"><label for="wPackTitleEdit">Título de los paquetes</label><input id="wPackTitleEdit"></div></div>
+<div class="field" style="margin-top:14px"><label for="wPackDescEdit">Presentación de los paquetes</label><textarea id="wPackDescEdit"></textarea></div>
+<div class="grid" style="margin-top:14px"><div class="field"><label for="wVolumeTitleEdit">Título de precios por volumen</label><input id="wVolumeTitleEdit"></div><div class="field"><label for="wWhatsappMessage">Mensaje inicial de cotización</label><input id="wWhatsappMessage"></div></div>
+<div class="field" style="margin-top:14px"><label for="wVolumeDescEdit">Explicación sobre los precios por cantidad</label><textarea id="wVolumeDescEdit"></textarea></div>
+<div class="field" style="margin-top:14px"><label for="wBenefitsEdit">Ventajas comerciales (una frase por línea)</label><textarea id="wBenefitsEdit" style="min-height:110px"></textarea></div>
+<div class="split-heading"><div><h3>Paquetes para emprendedores</h3><p class="help">Puedes editar precios o dejarlos vacíos para mostrar «Cotización personalizada». Los paquetes son solicitudes, no pedidos pagados.</p></div><button id="addKit" class="secondary">＋ Nuevo paquete</button></div>
+<div id="packageEditorList" class="kit-editor-list"></div>
+<div class="split-heading"><div><h3>Tabla de precios al por mayor</h3><p class="help">Pon el precio por unidad solo cuando lo hayas definido. El envío en blanco se mostrará como pendiente.</p></div><button id="addTier" class="secondary">＋ Nueva escala</button></div>
+<div class="tier-editor-labels"><span>Cantidad (piezas)</span><span>Precio unitario</span><span>Envío (opcional)</span><span></span></div>
+<div id="tierEditorList"></div><div class="note" style="margin-top:16px">Los precios de las imágenes de referencia NO se copiaron. Hasta que los fijes, tus clientes verán «Cotizar» y podrán enviarte su selección por WhatsApp.</div>
+</div>
+<div class="card" id="editarPedido"><div class="row"><div><span class="chip">CONFIRMACIÓN</span><h2 style="margin-top:12px">3. Pedido y WhatsApp</h2><p class="muted">Personaliza el resumen del carrito, el botón verde y los datos de envío sin tocar código. El teléfono al que llegarán los pedidos se configura arriba, en «Número de WhatsApp».</p></div></div>
+<div class="grid" style="margin-top:18px"><div class="field"><label for="oTitle">Título del carrito</label><input id="oTitle"></div><div class="field"><label for="oSummaryTitle">Título del total</label><input id="oSummaryTitle"></div></div>
+<div class="field" style="margin-top:12px"><label for="oSummaryText">Texto bajo el total</label><textarea id="oSummaryText"></textarea></div>
+<div class="grid" style="margin-top:12px"><div class="field"><label for="oBtnWa">Botón WhatsApp</label><input id="oBtnWa"></div><div class="field"><label for="oBtnCopy">Botón copiar pedido</label><input id="oBtnCopy"></div></div>
+<div class="field" style="margin-top:12px"><label for="oDirectLink">Enlace WhatsApp</label><input id="oDirectLink"></div>
+<div class="field" style="margin-top:12px"><label for="oNote">Texto de aclaración al final</label><textarea id="oNote"></textarea></div>
+<h3>Campos de envío: textos de ejemplo</h3><div class="grid"><div class="field"><label for="oName">Nombre</label><input id="oName"></div><div class="field"><label for="oAddress">Dirección</label><input id="oAddress"></div><div class="field"><label for="oState">Estado / Departamento</label><input id="oState"></div><div class="field"><label for="oCity">Ciudad</label><input id="oCity"></div><div class="field"><label for="oPostal">Código postal</label><input id="oPostal"></div><div class="field"><label for="oContact">Contacto</label><input id="oContact"></div><div class="field"><label for="oNotePlaceholder">Nota opcional</label><input id="oNotePlaceholder"></div></div>
+<div class="note" style="margin-top:15px">Los botones de WhatsApp abrirán el número que configures, con el contenido del carrito y los datos de envío. Guarda con «Descargar productos.js» al final.</div>
+</div>
+<div class="card"><div class="row" style="justify-content:space-between"><div><h2>4. Tus productos</h2><p class="muted" style="margin:0">Selecciona un producto para editar o agrega uno nuevo.</p></div><button id="addProduct" class="lime">＋ Nuevo producto</button></div>
 <div class="row" style="margin-top:18px"><input id="filterProducts" placeholder="🔎 Buscar por nombre, marca o código" style="flex:1;min-width:190px"/><span id="productCount" class="muted"></span></div>
 <div class="row" style="margin-top:12px"><label class="btn secondary" for="bulkPhotos">📷 Cargar varias fotos</label><input id="bulkPhotos" type="file" accept="image/*" multiple style="display:none"/><span class="help">Nombra cada foto con el código del perfume (ej. BF001.jpg). Se vinculará automáticamente.</span></div>
 <div id="productList" class="products"></div>
 <div id="productEditor" class="panel" hidden><div><div class="preview"><img id="imagePreview" src="imagenes/placeholder.svg" alt="Vista previa del producto" /></div><p class="help">Si eliges una foto de tu dispositivo, se incluye dentro del archivo que descargarás.</p></div><div>
 <h3 id="editingTitle">Editar producto</h3>
-<div class="grid"><div class="field"><label for="pCode">Código del perfume</label><input id="pCode" placeholder="BF001"/></div><div class="field"><label for="pBrand">Marca</label><input id="pBrand" placeholder="Dior"/></div><div class="field"><label for="pName">Nombre *</label><input id="pName" /></div><div class="field"><label for="pCategory">Categoría *</label><input id="pCategory" list="categoriesList" /><datalist id="categoriesList"><option value="Perfumes Hombre"></option><option value="Perfumes Mujer"></option><option value="Perfumes Unisex"></option><option value="Perfumes Árabes"></option><option value="Perfumes"></option><option value="Zapatillas"></option><option value="Ropa"></option><option value="Relojes"></option><option value="Gafas"></option><option value="Accesorios"></option></datalist></div><div class="field"><label for="pPrice">Precio *</label><input id="pPrice" type="number" min="0" step="0.01" /></div><div class="field"><label for="pTag">Etiqueta opcional</label><input id="pTag" placeholder="Nuevo / Popular / Destacado" /></div></div>
+<div class="grid"><div class="field"><label for="pCode">Código del perfume</label><input id="pCode" placeholder="BF001"/></div><div class="field"><label for="pBrand">Marca</label><input id="pBrand" placeholder="Dior"/></div><div class="field"><label for="pName">Nombre *</label><input id="pName" /></div><div class="field"><label for="pCategory">Categoría *</label><input id="pCategory" list="categoriesList" /><datalist id="categoriesList"><option value="Perfumes Hombre"></option><option value="Perfumes Mujer"></option><option value="Perfumes Unisex"></option><option value="Perfumes Árabes"></option><option value="Perfumes"></option><option value="Zapatillas"></option><option value="Ropa"></option><option value="Relojes"></option><option value="Gafas"></option><option value="Accesorios"></option></datalist></div><div class="field"><label for="pPrice">Precio (vacío = consultar)</label><input id="pPrice" type="number" min="0" step="0.01" /></div><div class="field"><label for="pTag">Etiqueta opcional</label><input id="pTag" placeholder="Nuevo / Popular / Destacado" /></div></div>
 <div class="field" style="margin-top:12px"><label for="pDescription">Descripción</label><textarea id="pDescription"></textarea></div>
 <div class="field" style="margin-top:12px"><label for="pImage">Imagen: enlace o ruta del archivo</label><input id="pImage" placeholder="imagenes/mi-producto.jpg" /></div>
 <div class="field" style="margin-top:12px"><label for="imageUpload">O elegir una foto de tu dispositivo</label><input id="imageUpload" type="file" accept="image/png,image/jpeg,image/webp,image/heic,image/heif,image/*" /><div class="help">Se reduce automáticamente para que pese menos. También puedes escribir una dirección "imagenes/foto.jpg" si subirás la foto a GitHub.</div></div>
-<div class="check" style="margin-top:15px"><input type="checkbox" id="pAvailable"/><label for="pAvailable">Disponible para consulta</label></div>
-<div class="actions"><button id="deleteProduct" class="danger">Eliminar producto</button><button id="saveProduct" class="lime">Guardar cambios de este producto ✓</button></div>
+<div class="row" style="margin-top:10px"><button type="button" class="secondary" id="clearPhoto">✕ Quitar foto del producto</button><span class="help">El producto se queda, pero muestra una imagen provisional.</span></div><div class="check" style="margin-top:15px"><input type="checkbox" id="pAvailable"/><label for="pAvailable">Disponible para consulta</label></div>
+<div class="actions"><button id="deleteProduct" class="danger">Eliminar producto</button><button id="saveProduct" class="lime">Guardar cambios ✓</button></div>
 </div></div></div>
 <div class="note"><b>Cómo se guardan los cambios:</b> primero edita tus productos y luego descarga el archivo actualizado <b>productos.js</b> con el botón de abajo. Reemplaza el viejo archivo de ese nombre junto a index.html. Para una web ya publicada, sube el archivo nuevo a GitHub en lugar del anterior. Los cambios de este editor NO se envían solos a internet.</div>
-<div class="sticky"><p><b>3. Último paso:</b> descarga tus cambios y reemplaza <b>productos.js</b></p><button id="download" class="lime">↓ Descargar productos.js</button></div>
+<div class="sticky"><p><b>5. Último paso:</b> descarga tus cambios y reemplaza <b>productos.js</b></p><button id="download" class="lime">↓ Descargar productos.js</button></div>
 </main><script src="productos.js"></script>
 <script>
 'use strict';
 let config=JSON.parse(JSON.stringify(window.CATALOGO_CONFIG||{}));
+let orderCfg=JSON.parse(JSON.stringify(window.CATALOGO_PEDIDO||{titulo:'TU PEDIDO',resumenTitulo:'TOTAL',resumenTexto:'Entre más unidades armes, mejor precio. Te cotizo al recibir el pedido.',textoBotonWhats:'ENVIAR PEDIDO POR WHATSAPP',textoBotonCopiar:'COPIAR PEDIDO',notaFinal:'Al enviarlo se abre WhatsApp con tu pedido escrito.',textoLinkDirecto:'Escribirme directo por WhatsApp',placeholders:{}}));
 let products=JSON.parse(JSON.stringify(window.PRODUCTOS||[]));
+let wholesale=JSON.parse(JSON.stringify(window.CATALOGO_MAYOREO||{}));
+wholesale.paquetes=wholesale.paquetes||[];wholesale.escalas=wholesale.escalas||[];wholesale.beneficios=wholesale.beneficios||[];
 let currentId=products[0]?.id||null;
 const $=id=>document.getElementById(id);
 const pairs={cName:'nombre',cSub:'subtitulo',cWa:'whatsapp',cIg:'instagram',cDescription:'descripcion',cCurrency:'moneda',cSymbol:'simbolo'};
 for(const [id,key] of Object.entries(pairs)){$(id).value=config[key]||'';$(id).addEventListener('input',e=>config[key]=e.target.value);}
+const orderFields={oTitle:'titulo',oSummaryTitle:'resumenTitulo',oSummaryText:'resumenTexto',oBtnWa:'textoBotonWhats',oBtnCopy:'textoBotonCopiar',oNote:'notaFinal',oDirectLink:'textoLinkDirecto'};for(const [id,key] of Object.entries(orderFields)){$(id).value=orderCfg[key]||'';$(id).addEventListener('input',e=>orderCfg[key]=e.target.value)}orderCfg.placeholders=orderCfg.placeholders||{};const phFields={oName:'nombre',oAddress:'direccion',oState:'estado',oCity:'ciudad',oPostal:'postal',oContact:'contacto',oNotePlaceholder:'nota'};for(const [id,key] of Object.entries(phFields)){$(id).value=orderCfg.placeholders[key]||'';$(id).addEventListener('input',e=>orderCfg.placeholders[key]=e.target.value)}
+
+const wholesaleFields={wEyebrowEdit:'etiqueta',wSloganEdit:'frase',wTitleEdit:'titulo',wDescriptionEdit:'descripcion',wPackKickEdit:'subtituloPaquetes',wPackTitleEdit:'tituloPaquetes',wPackDescEdit:'descripcionPaquetes',wVolumeTitleEdit:'tituloEscalas',wVolumeDescEdit:'descripcionEscalas',wWhatsappMessage:'mensajeMayoreo'};
+for(const [id,k] of Object.entries(wholesaleFields)){$(id).value=wholesale[k]||'';$(id).addEventListener('input',e=>wholesale[k]=e.target.value)}
+$('wBenefitsEdit').value=(wholesale.beneficios||[]).join('\n');$('wBenefitsEdit').addEventListener('input',e=>wholesale.beneficios=e.target.value.split('\n').map(x=>x.trim()).filter(Boolean));
+function packageEditors(){
+ $('packageEditorList').replaceChildren();
+ wholesale.paquetes.forEach((p,i)=>{
+ const item=document.createElement('div');item.className='kit-edit-item';
+ const head=document.createElement('div');head.className='kit-edit-head';const title=document.createElement('strong');title.textContent=p.nombre||'Nuevo paquete';
+ const del=document.createElement('button');del.className='danger';del.textContent='Eliminar';del.addEventListener('click',()=>{if(!confirm('¿Eliminar este paquete?'))return;wholesale.paquetes.splice(i,1);packageEditors()});head.append(title,del);item.append(head);
+ const fields=document.createElement('div');fields.className='kit-edit-fields';
+ const mk=(label,key,type='text')=>{const w=document.createElement('label');w.className='field';w.textContent=label;const x=document.createElement('input');x.type=type;x.value=p[key]??'';if(type==='number'){x.min=0;x.step=key==='cantidad'?'1':'0.01'}x.addEventListener('input',()=>{p[key]=type==='number'?(x.value.trim()===''?null:Number(x.value)):x.value;if(key==='nombre')title.textContent=x.value||'Nuevo paquete'});w.append(x);return w};
+ fields.append(mk('Nombre del paquete','nombre'),mk('Etiqueta superior','sello'),mk('Cantidad de perfumes','cantidad','number'),mk('Precio del paquete (vacío = cotizar)','precio','number'),mk('Descripción corta','descripcion'),mk('Explicación de lo que incluye','detalle'));item.append(fields);
+ const perks=document.createElement('label');perks.className='field';perks.style.marginTop='13px';perks.textContent='Beneficios del paquete (una línea por ventaja)';const txt=document.createElement('textarea');txt.value=(p.beneficios||[]).join('\n');txt.addEventListener('input',()=>p.beneficios=txt.value.split('\n').map(x=>x.trim()).filter(Boolean));perks.append(txt);item.append(perks);
+ const check=document.createElement('label');check.className='check';check.style.marginTop='13px';const c=document.createElement('input');c.type='checkbox';c.checked=p.activo!==false;c.addEventListener('change',()=>p.activo=c.checked);check.append(c,document.createTextNode('Mostrar este paquete en la tienda'));item.append(check);
+ $('packageEditorList').append(item);
+ });
+}
+$('addKit').addEventListener('click',()=>{wholesale.paquetes.push({id:'KIT-'+Date.now(),nombre:'Nuevo paquete',sello:'POR MAYOR',cantidad:5,precio:null,descripcion:'',detalle:'',beneficios:[],activo:true});packageEditors()});
+function tierEditors(){const wrap=$('tierEditorList');wrap.replaceChildren();wholesale.escalas.forEach((t,i)=>{const row=document.createElement('div');row.className='tier-edit-row';
+ for(const [key,type,placeholder] of [['cantidad','number','Cantidad'],['unitario','number','Cotizar'],['envio','number','A definir']]){const x=document.createElement('input');x.type=type;x.min=0;x.step=key==='cantidad'?'1':'0.01';x.placeholder=placeholder;x.setAttribute('aria-label',placeholder);x.value=t[key]??'';x.addEventListener('input',()=>t[key]=x.value===''?null:Number(x.value));row.append(x)}
+ const del=document.createElement('button');del.className='danger';del.textContent='Eliminar';del.addEventListener('click',()=>{wholesale.escalas.splice(i,1);tierEditors()});row.append(del);wrap.append(row)})}
+$('addTier').addEventListener('click',()=>{wholesale.escalas.push({cantidad:10,unitario:null,envio:null});tierEditors()});
+packageEditors();tierEditors();
+
 $('cDemo').checked=config.esDemo!==false;$('cDemo').addEventListener('change',e=>config.esDemo=e.target.checked);
 function renderList(){
  $('productList').replaceChildren();
  for(const p of products.filter(x=>[x.nombre,x.marca,x.codigo,x.categoria].join(' ').toLowerCase().includes(($('filterProducts').value||'').toLowerCase()))){
    const b=document.createElement('button');b.className='product'+(p.id===currentId?' active':'');b.type='button';
-   const img=document.createElement('img');img.src=p.imagen||'imagenes/placeholder.svg';img.onerror=()=>img.src='imagenes/placeholder.svg';
-   const s=document.createElement('span');const name=document.createElement('b');name.textContent=p.nombre||'Sin nombre';const small=document.createElement('small');small.textContent=(p.categoria||'Sin categoría')+' · '+(config.simbolo||'$')+(p.precio||0);s.append(name,small);b.append(img,s);
+   const img=document.createElement('img');img.src=p.imagen||'imagenes/placeholder.svg';img.onerror=()=>{img.onerror=null;img.src='imagenes/placeholder.svg'};
+   const s=document.createElement('span');const name=document.createElement('b');name.textContent=p.nombre||'Sin nombre';const small=document.createElement('small');small.textContent=(p.categoria||'Sin categoría')+' · '+(p.precio===null?'Consultar precio':(config.simbolo||'$')+p.precio);s.append(name,small);b.append(img,s);
    b.addEventListener('click',()=>{saveCurrent(false);currentId=p.id;renderList();edit()});$('productList').append(b);
  }
  $('productCount').textContent=products.length+' productos';
@@ -68,19 +154,20 @@ $('filterProducts').addEventListener('input',renderList);
 function edit(){const p=products.find(x=>x.id===currentId);$('productEditor').hidden=!p;if(!p)return;
  $('pCode').value=p.codigo||p.id||'';$('pBrand').value=p.marca||'';
  $('editingTitle').textContent='Editar: '+(p.nombre||'Nuevo producto');
- $('pName').value=p.nombre||'';$('pCategory').value=p.categoria||'';$('pPrice').value=Number(p.precio||0);$('pTag').value=p.etiqueta||'';
+ $('pName').value=p.nombre||'';$('pCategory').value=p.categoria||'';$('pPrice').value=p.precio===null?'':Number(p.precio||0);$('pTag').value=p.etiqueta||'';
  $('pDescription').value=p.descripcion||'';$('pImage').value=p.imagen?.startsWith('data:')?'(foto incluida dentro del archivo)':p.imagen||'';
  $('imagePreview').src=p.imagen||'imagenes/placeholder.svg';$('imageUpload').value='';$('pAvailable').checked=p.disponible!==false;
 }
 function saveCurrent(alertUser=true){const p=products.find(x=>x.id===currentId);if(!p)return;
  p.codigo=$('pCode').value.trim();p.marca=$('pBrand').value.trim();
- p.nombre=$('pName').value.trim()||'Producto sin nombre';p.categoria=$('pCategory').value.trim()||'Varios';p.precio=Math.max(0,Number($('pPrice').value)||0);
+ p.nombre=$('pName').value.trim()||'Producto sin nombre';p.categoria=$('pCategory').value.trim()||'Varios';p.precio=$('pPrice').value.trim()===''?null:Math.max(0,Number($('pPrice').value)||0);
  p.etiqueta=$('pTag').value.trim();p.descripcion=$('pDescription').value.trim();p.disponible=$('pAvailable').checked;
  const imageText=$('pImage').value.trim();if(imageText&&!imageText.startsWith('(foto incluida'))p.imagen=imageText;
  if(alertUser)alert('Producto guardado en el editor. Para aplicar los cambios, descarga productos.js al terminar.');
 }
+$('clearPhoto').addEventListener('click',()=>{const p=products.find(x=>x.id===currentId);if(!p)return;p.imagen='imagenes/placeholder.svg';$('pImage').value='imagenes/placeholder.svg';$('imagePreview').src='imagenes/placeholder.svg';$('imageUpload').value='';alert('La foto se quitó de este producto. Descarga productos.js para aplicar los cambios.');});
 $('saveProduct').addEventListener('click',()=>{saveCurrent();renderList()});
-$('addProduct').addEventListener('click',()=>{saveCurrent(false);const p={id:'p'+Date.now(),codigo:'',marca:'',nombre:'Nuevo producto',categoria:'Perfumes',precio:0,descripcion:'',imagen:'imagenes/placeholder.svg',etiqueta:'',disponible:true};products.unshift(p);currentId=p.id;renderList();$('pName').focus()});
+$('addProduct').addEventListener('click',()=>{saveCurrent(false);const p={id:'p'+Date.now(),codigo:'',marca:'',nombre:'Nuevo producto',categoria:'Perfumes Hombre',precio:null,descripcion:'',imagen:'imagenes/placeholder.svg',etiqueta:'',disponible:true};products.unshift(p);currentId=p.id;renderList();$('pName').focus()});
 $('deleteProduct').addEventListener('click',()=>{if(!confirm('¿Eliminar este producto?'))return;products=products.filter(p=>p.id!==currentId);currentId=products[0]?.id||null;renderList()});
 $('pImage').addEventListener('input',()=>{const v=$('pImage').value;if(v&&v!=='(foto incluida dentro del archivo)')$('imagePreview').src=v});
 $('imageUpload').addEventListener('change',async ev=>{
@@ -93,7 +180,7 @@ $('imageUpload').addEventListener('change',async ev=>{
 $('download').addEventListener('click',()=>{
  saveCurrent(false);
  const phone=String(config.whatsapp||'').replace(/\D/g,'');config.whatsapp=phone;
- const js='// Archivo generado desde editor.html. Mantén el nombre productos.js.\nwindow.CATALOGO_CONFIG = '+JSON.stringify(config,null,2)+';\n\nwindow.PRODUCTOS = '+JSON.stringify(products,null,2)+';\n';
+ const js='// Archivo generado desde editor.html. Mantén el nombre productos.js.\nwindow.CATALOGO_CONFIG = '+JSON.stringify(config,null,2)+';\n\nwindow.CATALOGO_PEDIDO = '+JSON.stringify(orderCfg,null,2)+';\n\nwindow.CATALOGO_MAYOREO = '+JSON.stringify(wholesale,null,2)+';\n\nwindow.PRODUCTOS = '+JSON.stringify(products,null,2)+';\n';
  const blob=new Blob([js],{type:'text/javascript;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='productos.js';a.click();setTimeout(()=>URL.revokeObjectURL(url),4000);
  alert('¡Archivo generado! Ahora reemplaza el productos.js antiguo por este nuevo.');
 });
